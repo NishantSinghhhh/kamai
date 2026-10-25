@@ -3,7 +3,7 @@
 /* Design tokens — the reference dataviz palette (validated for both modes). */
 :root {
   color-scheme: light;
-  --page: #f9f9f7;
+  --page: #f0eee6;
   --surface-1: #fcfcfb;
   --text-primary: #0b0b0b;
   --text-secondary: #52514e;
@@ -61,6 +61,18 @@
   --status-warning: #fab219;
   --status-critical: #d03b3b;
   --delta-good: #0ca30c;
+}
+
+html {
+  /* paint the root too — without this, overscroll/bounce reveals white */
+  box-sizing: border-box;
+  background: var(--page);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
