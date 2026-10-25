@@ -6,3 +6,4 @@ ledger.json
 data/
 .DS_Store
 *.tsbuildinfo
+.next/
