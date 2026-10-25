@@ -433,3 +433,4 @@ Everything else in `.env.example` has a working default.
 TypeScript, Express, `@x402/*` (Hedera exact scheme), `@hiero-ledger/sdk`, `@0gfoundation/0g-compute-ts-sdk`, viem, Next.js. Built with help from Claude Code; the spec it worked from is `docs/SPEC.md`.
 
 MIT license.
+# kamai
