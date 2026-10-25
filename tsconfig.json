@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "sourceMap": false,
+    "noEmit": true
+  },
+  "include": [
+    "packages/shared/src/**/*.ts",
+    "apps/kamai/src/**/*.ts",
+    "apps/customers/src/**/*.ts",
+    "scripts/**/*.ts"
+  ]
+}

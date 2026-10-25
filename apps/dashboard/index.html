@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamai — the agent that pays its own bills</title>
+    <link rel="stylesheet" href="/src/main.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>kamai</h1>
+        <p class="tagline">the agent that pays its own bills</p>
+      </div>
+      <span id="status-badge" class="badge">…</span>
+    </header>
+
+    <section id="cards" class="cards">
+      <div class="card"><span class="label">Revenue</span><span id="revenue" class="value">—</span></div>
+      <div class="card"><span class="label">Compute cost</span><span id="cost" class="value">—</span></div>
+      <div class="card"><span class="label">Profit</span><span id="profit" class="value">—</span></div>
+      <div class="card"><span class="label">Allowance</span><span id="allowance" class="value">—</span></div>
+      <div class="card">
+        <span class="label">Today's compute vs cap</span>
+        <span id="daily" class="value">—</span>
+        <div class="meter"><div id="daily-meter" class="fill"></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Revenue vs compute cost</h2>
+      <svg id="chart" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="revenue and cost over time"></svg>
+    </section>
+
+    <section>
+      <h2>Job feed</h2>
+      <table id="jobs">
+        <thead>
+          <tr>
+            <th>time</th><th>tx explained</th><th>price</th><th>cost</th><th>margin</th><th>proof</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Policy (from ENS)</h2>
+      <ul id="policy"></ul>
+      <p class="note">policy records are set by the owner — the agent key cannot write them (EAC per-record roles)</p>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

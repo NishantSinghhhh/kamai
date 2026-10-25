@@ -1,0 +1,22 @@
+{
+  "name": "@kamai/customers",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/buyer.ts",
+    "start": "tsx src/buyer.ts"
+  },
+  "dependencies": {
+    "@hiero-ledger/sdk": "2.85.0",
+    "@kamai/shared": "*",
+    "@x402/core": "~2.28.0",
+    "@x402/fetch": "~2.28.0",
+    "@x402/hedera": "~2.28.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
