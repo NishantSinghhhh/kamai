@@ -19,6 +19,7 @@
     "kamai": "npm run dev -w apps/kamai",
     "customers": "npm run dev -w apps/customers",
     "dashboard": "npm run dev -w apps/dashboard",
+    "mock": "tsx scripts/mock-kamai.ts",
     "gen-keys": "tsx scripts/gen-keys.ts",
     "setup-hedera": "tsx scripts/setup-hedera.ts",
     "create-topic": "tsx scripts/create-topic.ts",

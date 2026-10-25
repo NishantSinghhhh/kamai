@@ -5,6 +5,7 @@
  * x402 paywall ever shows a price, so a hungry kamai never takes money.
  */
 import express, { type Request, type Response } from "express";
+import cors from "cors";
 import {
   loadConfig,
   hashScanTxUrl,
@@ -93,6 +94,9 @@ async function currentStats(): Promise<Stats> {
 // --- app ----------------------------------------------------------------------
 
 const app = express();
+
+// the dashboard (:3001) reads the free routes cross-origin
+app.use(cors());
 
 /** 1. budget gate — refuse before the paywall ever shows a price. */
 app.use("/explain", (req, res, next) => {

@@ -19,7 +19,8 @@ npm run ens-delegate   # grant the agent key status/stats writes only
 
 npm run kamai          # the agent on :3000
 npm run customers -- --bots 3 --interval 8 --budget 1
-npm run dashboard      # P&L on :5173
+npm run dashboard      # P&L on :3001 (Next.js; point it at the agent with NEXT_PUBLIC_KAMAI_API)
+npm run mock           # fake /stats + /jobs for frontend work without keys
 ```
 
 ## Architecture
