@@ -24,7 +24,7 @@ npm run dashboard      # P&L on :5173
 
 ## Architecture
 
-See [`docs/SPEC.md`](docs/SPEC.md) §5 for the full description and `docs/architecture.png` for the diagram.
+See [`docs/SPEC.md`](docs/SPEC.md) §5 for the full description (architecture diagram to follow).
 
 ```
 customer bots ──resolve kamai.you.eth──▶ GET /explain ──402──▶ signed USDC transfer (x402, Hedera)

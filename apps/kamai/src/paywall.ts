@@ -10,7 +10,7 @@
  * into the ledger.
  */
 import { ExactHederaScheme } from "@x402/hedera/exact/server";
-import { HEDERA_TESTNET_CAIP2, HEDERA_TESTNET_USDC } from "@x402/hedera";
+import { HEDERA_TESTNET_CAIP2 } from "@x402/hedera";
 import { HTTPFacilitatorClient, x402HTTPResourceServer, x402ResourceServer } from "@x402/core/server";
 import { paymentMiddlewareFromHTTPServer } from "@x402/express";
 import type { PaymentPayload } from "@x402/core/types";
